@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Journey to Hope is a sponsorship application that tries to help orphans and poor family children by bringing them together with sponsors."
+    />
+
+    <link rel="icon" href="img/journeytohope-logo.png" />
+    <link rel="apple-touch-icon" href="img/journeytohope-logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+    <script>
+      function goToSigninPage() {
+        window.location.href = "/signin.html";
+      }
+    </script>
+    <script>
+      function goToChildren() {
+        window.location.href = "/children.html";
+      }
+    </script>
+
+    <title>Journey to Hope &mdash;Be hope to children!</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <a href="#">
+        <img
+          class="logo"
+          alt="Journey to Hope logo"
+          src="img/journeytohope-logo.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#about">How It Works</a></li>
+          <li><a class="main-nav-link" href="#meals">Our Children</a></li>
+          <li>
+            <a class="main-nav-link" href="#testimonials">About Us</a>
+          </li>
+          <li><a class="main-nav-link" href="#donation">Donation</a></li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToSigninPage()">Sign In</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Be Sponsor Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-secondary">
+              Journey to hope for children in need
+            </h1>
+            <p class="hero-description">
+              Your generous sponsorships will bring hope to many children. Let's
+              be hope for them.
+            </p>
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Start sponsoring</a
+            >
+            <a href="#about" class="btn btn--outline">Learn more &darr;</a>
+            <div class="delivered-meals">
+              <div class="delivered-imgs">
+                <img src="img/sponsors/sponsor1.PNG"/>
+                <img src="img/sponsors/sponsor2.PNG"/>
+                <img src="img/sponsors/sponsor3.PNG"/>
+                <img src="img/sponsors/sponsor4.PNG"/>
+                <img src="img/sponsors/sponsor5.PNG"/>
+                <img src="img/sponsors/sponsor6.PNG"/>
+              </div>
+              <p class="delivered-text">
+                <span>100+</span> sponsors joined us last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/hero.png"
+              class="hero-img"
+              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="container">
+          <h2 class="heading-featured-in">As featured in</h2>
+          <div class="logos">
+            <img src="img/logo/unicef.png" alt="Unicef logo" />
+            <img
+              src="img/logos/business-insider.png"
+              alt="Business Insider logo"
+            />
+            <img
+              src="img/logos/the-new-york-times.png"
+              alt="The New York Times logo"
+            />
+            <img src="img/logos/forbes.png" alt="Forbes logo" />
+            <img src="img/logos/usa-today.png" alt="USA Today logo" />
+          </div>
+        </div>
+      </section>
+      <section class="section-about" id="about">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Give hope to a child in 3 simple steps
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!--STEP 01-->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">
+              Sign up by filling out the form
+            </h3>
+            <p class="step-description">
+              Sign up by filling out the required information in the form. If
+              you are already a member, log in and start reading our children's
+              life stories.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-1.png"
+              class="step-img"
+              alt="iPhone app
+            preferences selection screen"
+            />
+          </div>
+          <!--STEP 02-->
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-2.png"
+              class="step-img"
+              alt="iPhone app
+            meal approving plan screen"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">
+              Select a child to sponsor (or the area you want to donate to)
+            </h3>
+            <p class="step-description">
+              You can see the children registered under our children category 
+              and read their stories. You can sponsor the child of your choice. 
+              If you wish, you can donate by choosing a category instead of sponsoring a single child.
+              You can make a one-time or monthly donation.
+            </p>
+          </div>
+          <!--STEP 03-->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">
+              Contact us regarding the status of the child you sponsor
+            </h3>
+            <p class="step-description">
+              You can contact us to be informed about the development of the 
+              children you sponsor and get information about the child's current needs.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/app/app-screen-3.png"
+              class="step-img"
+              alt="iPhone app
+            delivery screen"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-meals" id="meals">
+        <div class="container center-text">
+          <span class="subheading">Our Children</span>
+          <h2 class="heading-secondary">
+            Journey to Hope helps 10+ children now
+          </h2>
+        </div>
+
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <div class="meal">
+            <img
+              src="img/ourchildren/1.jpg"
+              class="meal-img"
+            />
+            <div class="meal-content">
+              <div class="need-tags">
+                <span class="tag tag--education">Education</span>
+              </div>
+              <p class="meal-title">T*** G******</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>8</strong> years old</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                  <span>Gender:<strong> Boy</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                  <span><strong>İzmir</strong> ,Turkey</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="meal">
+            <img
+              src="img/ourchildren/2.jpg"
+              class="meal-img"
+            />
+            <div class="meal-content">
+              <div class="need-tags">
+                <span class="tag tag--clothing">Clothing</span>
+                <span class="tag tag--nutrition">Nutrition</span>
+              </div>
+              <p class="meal-title">A****** S******</p>
+              <ul class="meal-attributes">
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                  <span><strong>15</strong> years old</span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                  <span>Gender:<strong> Girl</strong></span>
+                </li>
+                <li class="meal-attribute">
+                  <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                  <span><strong>Adana</strong> ,Turkey</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="diets">
+            <h3 class="heading-tertiary">Help options in different areas</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Education</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Health</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Personal Care</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Nutrition</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Shelter</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Clothing</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                <span>Toys</span>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="container all-children">
+          <a class="link" href="javascript:void(0);" onclick="goToChildren()">See all children &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-testimonials" id="testimonials">
+        <div class="testimonials-container">
+          <span class="subheading">About Us</span>
+          <h2 class="heading-secondary">Once you see the happiness of children, you won't want to leave</h2>
+
+          <div class="testimonials">
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/developers/ozge.jpg"
+                alt="Photo of developer Ozge Gungordu"
+              />
+              <blockquote class="testimonial-text">
+                We developed Journey to Hope, inspired by the children who were 
+                left orphaned or lost their homes in the earthquakes that 
+                occurred in Turkey on February 6. We are trying to bring together as many children and sponsors
+                as we can. With our user-friendly design, you can easily 
+                sign up and start sponsoring children.
+              </blockquote>
+              <p class="testimonial-name">&mdash; Özge Güngördü</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/developers/cagatay.jpg"
+                alt="Photo of developer Cagatay Ege Yildirim"
+              />
+              <blockquote class="testimonial-text">
+                Catataycim yaz bisiler developer olarak mi yapalim kullanici olarak mi
+                bilemedim
+              </blockquote>
+              <p class="testimonial-name">&mdash; Çağatay Ege Yildirim</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/developers/huseyin.jpg"
+                alt="Photo of developer Huseyin Soykok"
+              />
+              <blockquote class="testimonial-text">
+               napiyon laaaa ben developer gibi yazdim normalde user olarak yazacaktim sonra 
+               dedim biz napiyoz bilsinler
+              </blockquote>
+              <p class="testimonial-name">&mdash; Hüseyin Soykök</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                class="testimonial-img"
+                src="img/developers/salih.jpg"
+                alt="Photo of developer Salih Katircioglu"
+              />
+              <blockquote class="testimonial-text">
+               ne yazalim bilmyiom kafaniza gore duzenlerim napim
+              </blockquote>
+              <p class="testimonial-name">&mdash; Salih Katircioğlu</p>
+            </figure>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-1.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-2.png"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-3.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-4.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-5.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-6.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-7.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-8.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-9.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-10.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-11.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              src="img/children/children-12.jpg"
+              alt="Photo of beautifully arranged food"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section-donation" id="donation">
+        <div class="container">
+          <span class="subheading">Donation</span>
+          <h2 class="heading-secondary">
+            Make a one-time or monthly donation of any amount to be used in any area you want
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <div class="donation-plan donation-plan--onetime">
+            <header class="plan-header">
+              <p class="plan-name">One-Time</p>
+              <p class="plan-amount"><span>Enter An Amount</span></p>
+              <p class="plan-text">This is a one-time donation</p>
+            </header>
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="amount">Amount</label>
+                <input
+                  id="amount"
+                  type="amount"
+                  placeholder="100$"
+                  name="amount"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-where">Select Area </label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one option</option>
+                  <option value="education">Education</option>
+                  <option value="health">Health</option>
+                  <option value="personal">Personal Care</option>
+                  <option value="nutrition">Nutrition</option>
+                  <option value="shelter">Shelter</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="toys">Toys</option>
+                </select>
+              </div> 
+            </form>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Confirm</a>
+            </div>
+          </div>
+
+          <div class="donation-plan donation-plan--monthly">
+            <header class="plan-header">
+              <p class="plan-name">Monthly</p>
+              <p class="plan-amount"><span>Enter An Amount</span></p>
+              <p class="plan-text">This is a monthly donation</p>
+            </header>
+            <form class="cta-form" name="sign-up" netlify>
+              <div>
+                <label for="amount">Amount</label>
+                <input
+                  id="amount"
+                  type="amount"
+                  placeholder="100$"
+                  name="amount"
+                  required
+                />
+              </div>
+              <div>
+                <label for="select-where">Select Area </label>
+                <select id="select-where" name="select-where" required>
+                  <option value="">Please choose one option</option>
+                  <option value="education">Education</option>
+                  <option value="health">Health</option>
+                  <option value="personal">Personal Care</option>
+                  <option value="nutrition">Nutrition</option>
+                  <option value="shelter">Shelter</option>
+                  <option value="clothing">Clothing</option>
+                  <option value="toys">Toys</option>
+                </select>
+              </div> 
+            </form>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Confirm</a>
+            </div>
+          </div>
+        </div>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Start sponsoring now!</h2>
+              <p class="cta-text">
+                Many children who need help are waiting for you. Start
+                sponsoring today. You can make a one-time or monthly donation.
+                You can cancel or pause your sponsorship anytime.
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="Name Surname"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+     
+                <div>
+                  <label for="phone">Phone Number</label>
+                  <input
+                    id="phone"
+                    type="phone"
+                    placeholder="05XX XXX XX XX"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="********"
+                    name="password"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Two children walking in school uniform"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Journey to Hope logo"
+              src="img/journeytohope-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by EMU.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <form class="cta-form" name="sign-up" netlify>
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Name Surname"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+              />
+            </div>
+ 
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                id="phone"
+                type="phone"
+                placeholder="05XX XXX XX XX"
+                name="phone"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Your Message</label>
+              <input
+                id="message"
+                type="message"
+                placeholder="Type here"
+                name="message"
+                required
+              />
+            </div>
+            <button class="btn btn--form">Send</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Journey to Hope is a sponsorship application that tries to help orphans and poor family children by bringing them together with sponsors."
+    />
+
+    <link rel="icon" href="img/journeytohope-logo.png" />
+    <link rel="apple-touch-icon" href="img/journeytohope-logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <script defer src="js/script.js"></script>
+    <script>
+      function goToAbout() {
+        window.location.href = "/index.html#about";
+      }
+      function goToMeals() {
+        window.location.href = "/index.html#meals";
+      }
+      function goToDevelopers() {
+        window.location.href = "/index.html#developers";
+      }
+      function goToPricing() {
+        window.location.href = "/index.html#pricing";
+      }
+      function goToSigninPage() {
+        window.location.href = "/signin.html";
+      }
+      function goToSponsorNow() {
+        window.location.href = "/index.html#cta";
+      }
+    </script>
+
+
+    <title>Journey to Hope &mdash;Be hope to children!</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <a href="#">
+        <img
+          class="logo"
+          alt="Journey to Hope logo"
+          src="img/journeytohope-logo.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToAbout()">How it works</a></li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToMeals()"">Our Children</a></li>
+          <li>
+            <a class="main-nav-link" href="javascript:void(0);" onclick="goToDevelopers()"">About Us</a>
+          </li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToPricing()">Donation</a></li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToSigninPage()">Sign In</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="javascript:void(0);" onclick="goToSponsorNow()">Be Sponsor Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+
+      <div class="container grid grid--3-cols margin-bottom-md">
+        <div class="meal">
+
+          <img
+            src="img/ourchildren/1.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--education">Education</span>
+            </div>
+            <p class="meal-title">T*** G******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>8</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                <span>Gender:<strong> Boy</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>İzmir</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/2.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">A****** S******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>15</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Adana</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/3.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">M**** D****</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>7</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Ankara</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/4.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--education">Education</span>
+            </div>
+            <p class="meal-title">C*** K*******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Malatya</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/5.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+            </div>
+            <p class="meal-title">N*** L****</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>5</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Antalya</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/6.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+<span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">G******* H***</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>5</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                <span>Gender:<strong> Boy</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Hakkari</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/7.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">J****** R*******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>8</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                <span>Gender:<strong> Boy</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Hatay</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/8.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">V***** B***</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>4</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Erzincan</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/9.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">F******** T******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>9</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                <span>Gender:<strong> Boy</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Maras</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/10.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">A** Z*****</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>7</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Trabzon</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/11.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">L**** D****</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>10</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="female-outline"></ion-icon>
+                <span>Gender:<strong> Girl</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Mersin</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+        <div class="meal">
+          <img
+            src="img/ourchildren/12.jpg"
+            class="meal-img"
+          />
+          <div class="meal-content">
+            <div class="need-tags">
+              <span class="tag tag--clothing">Clothing</span>
+              <span class="tag tag--nutrition">Nutrition</span>
+            </div>
+            <p class="meal-title">K*** H** M******</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span><strong>3</strong> years old</span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="male-outline"></ion-icon>
+                <span>Gender:<strong> Boy</strong></span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="location-outline"></ion-icon>
+                <span><strong>Istanbul</strong> ,Turkey</span>
+              </li>
+            </ul>
+            <div class="plan-confirm">
+              <a href="#" class="btn btn--full">Be Sponsor</a>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Journey to Hope logo"
+              src="img/journeytohope-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by EMU.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <form class="cta-form" name="sign-up" netlify>
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Name Surname"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+              />
+            </div>
+ 
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                id="phone"
+                type="phone"
+                placeholder="05XX XXX XX XX"
+                name="phone"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Your Message</label>
+              <input
+                id="message"
+                type="message"
+                placeholder="Type here"
+                name="message"
+                required
+              />
+            </div>
+            <button class="btn btn--form">Send</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

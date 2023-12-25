@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Journey to Hope is a sponsorship application that tries to help orphans and poor family children by bringing them together with sponsors."
+    />
+
+    <link rel="icon" href="img/journeytohope-logo.png" />
+    <link rel="apple-touch-icon" href="img/journeytohope-logo.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <script defer src="js/script.js"></script>
+    <script>
+      function goToAbout() {
+        window.location.href = "/index.html#about";
+      }
+      function goToMeals() {
+        window.location.href = "/index.html#meals";
+      }
+      function goToTestimionals() {
+        window.location.href = "/index.html#testimionals";
+      }
+      function goToPricing() {
+        window.location.href = "/index.html#pricing";
+      }
+      function goToSigninPage() {
+        window.location.href = "/signin.html";
+      }
+    </script>
+
+
+    <title>Journey to Hope &mdash;Be hope to children!</title>
+  </head>
+  <body>
+    <header class="header sticky">
+      <a href="#">
+        <img
+          class="logo"
+          alt="Journey to Hope logo"
+          src="img/journeytohope-logo.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToAbout()">How it works</a></li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToMeals()"">Our Children</a></li>
+          <li>
+            <a class="main-nav-link" href="javascript:void(0);" onclick="goToTestimionals()"">About Us</a>
+          </li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToPricing()">Donation</a></li>
+          <li><a class="main-nav-link" href="javascript:void(0);" onclick="goToSigninPage()">Sign In</a></li>
+          <li>
+            <a class="main-nav-link nav-cta" href="#cta">Be Sponsor Now</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Start Sponsoring</h2>
+              <p class="cta-text">
+                
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+     
+                <div>
+                  <label for="password">Password</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="*************"
+                    name="password"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Sign In</button>
+              </form>
+              
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Two children walking in school uniform"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img
+              class="logo"
+              alt="Journey to Hope logo"
+              src="img/journeytohope-logo.png"
+            />
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; <span class="year">2023</span> by EMU.
+            All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <form class="cta-form" name="sign-up" netlify>
+            <div>
+              <label for="full-name">Full Name</label>
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Name Surname"
+                name="full-name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="me@example.com"
+                name="email"
+                required
+              />
+            </div>
+ 
+            <div>
+              <label for="phone">Phone Number</label>
+              <input
+                id="phone"
+                type="phone"
+                placeholder="05XX XXX XX XX"
+                name="phone"
+                required
+              />
+            </div>
+            <div>
+              <label for="message">Your Message</label>
+              <input
+                id="message"
+                type="message"
+                placeholder="Type here"
+                name="message"
+                required
+              />
+            </div>
+            <button class="btn btn--form">Send</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
